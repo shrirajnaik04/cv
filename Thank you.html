@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <title>Thank you.</title>
+    
+        <body>
+            <div class="success-tick">
+                <div class="tick">
+                  <svg viewBox="0 0 70 70">
+                    <path class="path" fill="none" stroke="#4CAF50" stroke-width="6" stroke-miterlimit="10" d="M25,35l10,10l20,-20"/>
+                  </svg>
+                </div>
+                <p style="font-size: 25px;" class="success-message">Your submission was successful!</p>
+              </div>
+              
+        <h2 style="text-align: center;">Thank you for showing interest in my profile.</h2>>
+</body>
+
+    <style>
+.success-tick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: #4CAF50;
+}
+
+.tick {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 6px solid #4CAF50;
+  position: relative;
+  animation: tick 0.8s ease-in-out;
+}
+
+.path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: draw 0.8s ease-in-out forwards;
+}
+
+.success-message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@keyframes tick {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+    </style>
+</html>
